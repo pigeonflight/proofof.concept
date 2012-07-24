@@ -1,0 +1,5 @@
+<configure xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns="http://namespaces.zope.org/zope">
+    <plone:static directory="theme/concept" type="theme"/>
+</configure>

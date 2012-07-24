@@ -1,0 +1,17 @@
+<rules xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <theme href="index.html"/>
+    <replace theme="/html/head/body" content="/html/head/body"/>
+    <replace css:theme="html body div.container-fluid div.row-fluid div.span9
+        div.row-fluid" css:content="#portal-column-content"/>
+    <drop theme="/html/body/div[2]/div/div[2]/div[3]"/>
+    <drop theme="/html/body/div[2]/div/div[2]/div/p[2]"/>
+    <copy css:theme=".dropdown-menu" css:content="#portal-personaltools"/>
+    <replace theme="/html/body/div/div/div/div[2]/ul"
+        css:content="#portal-globalnav"/>
+    <replace css:theme="html body div.container-fluid footer"
+        css:content="#portal-footer"/>
+    <copy css:theme="html body div.container-fluid div.row-fluid div.span3"
+        css:content="#portal-column-one"/>
+</rules>
